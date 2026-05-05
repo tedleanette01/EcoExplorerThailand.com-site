@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Top 20 responsible, low-impact destinations in Thailand — personally vetted for ethical wildlife, community tourism, national parks and sustainable travel.">
+    <title>Top 20 Responsible Destinations • EcoExplorer Thailand</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
+        :root {
+            --tw-color-primary: #166534;
+            --tw-color-accent: #0f766e;
+        }
+        
+        * {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .tailwind-ready .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .destination-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 20px 20px 0 -10px rgb(22 101 52);
+        }
+    </style>
+</head>
+<body class="tailwind-ready font-sans antialiased bg-[#f8f9f4] text-[#1e2937]">
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-[#166534] text-white shadow-lg">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <a href="index.html" class="flex items-center gap-x-3 group">
+                    <span class="text-4xl drop-shadow-md">🌿</span>
+                    <div>
+                        <h1 class="font-serif text-2xl tracking-[-0.5px] leading-none">EcoExplorer</h1>
+                        <p class="text-[10px] font-medium tracking-[1px] text-[#a3e4d6] -mt-0.5">THAILAND</p>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium uppercase tracking-widest">
+                    <a href="index.html" class="hover:text-[#a3e4d6]">Home</a>
+                    <a href="destinations.html" class="text-[#a3e4d6]">Destinations</a>
+                    <a href="about.html" class="hover:text-[#a3e4d6]">Our Mission</a>
+                </div>
+
+                <button onclick="toggleMobileMenu()" class="md:hidden flex items-center justify-center w-10 h-10">
+                    <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            
+            <div id="mobileMenu" class="hidden md:hidden bg-[#166534] py-4 border-t border-white/10">
+                <div class="flex flex-col gap-y-4 px-6 text-sm font-medium uppercase">
+                    <a href="index.html" class="py-2">Home</a>
+                    <a href="destinations.html" class="py-2">Destinations</a>
+                    <a href="about.html" class="py-2">Our Mission</a>
+                    <a href="legal-notice.html" class="py-2 text-white/70 text-xs">Legal &amp; Privacy</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-screen-2xl mx-auto px-6 lg:px-12">
+        <div class="pt-16 pb-12">
+            <div class="inline-flex items-center gap-x-2 bg-[#166534] text-white text-xs font-medium uppercase tracking-widest px-5 h-9 rounded-3xl mb-6">
+                CURATED • PERSONALLY VETTED
+            </div>
+            <h1 class="font-serif text-6xl lg:text-7xl leading-none">Top 20 Responsible Destinations<br>in Thailand</h1>
+            <p class="mt-8 max-w-lg text-xl text-[#1e2937]/80">Only places we have personally visited and verified for genuine low-impact travel, ethical wildlife practices, community benefit, and minimal environmental footprint. No greenwashing. No mass-tourism traps.</p>
+        </div>
+
+        <!-- 3-column layout with more info per card -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
+            
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1015/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#166534] mb-2">Southern • National Park</div>
+                    <h3 class="font-serif text-2xl leading-tight">Khao Sok National Park</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Ancient rainforest with ethical raft-house stays and ranger-led hikes. Strict zero-waste policy and excellent wildlife viewing without crowds.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: slow nature immersion • 3–5 day recommended stay</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1005/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#0f766e] mb-2">Southern • Marine</div>
+                    <h3 class="font-serif text-2xl leading-tight">Koh Lanta Marine Park</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Community-led turtle conservation and coral-friendly snorkeling. Quiet beaches and no large resorts — perfect for responsible marine exploration.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: ethical snorkeling • turtle nesting season (Nov–Feb)</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/133/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#166534] mb-2">Southern • Marine Park</div>
+                    <h3 class="font-serif text-2xl leading-tight">Mu Ko Surin National Park</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Strict daily visitor limits protect pristine reefs. Locally managed snorkeling zones with excellent visibility and healthy coral gardens.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: day-trip snorkeling • low-impact diving</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/160/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#0f766e] mb-2">Northern • Community</div>
+                    <h3 class="font-serif text-2xl leading-tight">Mae Hong Son Homestays</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Karen and Lisu village stays where your payment goes directly to families. Authentic slow travel with shared meals and traditional crafts.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: cultural immersion • homestay experience</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/201/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#166534] mb-2">Northern • National Park</div>
+                    <h3 class="font-serif text-2xl leading-tight">Doi Inthanon National Park</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Cloud forests, ethical birdwatching, and highland trekking with local guides. Thailand’s highest peak offers cool climate and rich biodiversity.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: hiking &amp; birdwatching • cooler weather escape</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/211/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#0f766e] mb-2">Central • National Park</div>
+                    <h3 class="font-serif text-2xl leading-tight">Kaeng Krachan National Park</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Thailand’s largest national park and a tiger habitat. Community-protected wildlife corridors and excellent forest trails.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: wildlife spotting • multi-day trekking</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1009/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#166534] mb-2">Central • UNESCO</div>
+                    <h3 class="font-serif text-2xl leading-tight">Khao Yai National Park</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">UNESCO biosphere reserve with ethical night wildlife viewing. Diverse trails through evergreen forest and open grasslands.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: night safaris • family-friendly hiking</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1016/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#0f766e] mb-2">Southern • Island</div>
+                    <h3 class="font-serif text-2xl leading-tight">Koh Phangan East Coast</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Quiet permaculture stays and low-density beaches far from party zones. Focus on regenerative farming and community projects.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: relaxed island life • yoga &amp; wellness</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1036/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#166534] mb-2">Southern • Marine</div>
+                    <h3 class="font-serif text-2xl leading-tight">Similan Islands (day trips)</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Responsible operators only with strict no-touch reef rules and limited daily visitors to protect one of Thailand’s healthiest reef systems.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: world-class snorkeling • day trips only</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1043/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#0f766e] mb-2">Southern • Community</div>
+                    <h3 class="font-serif text-2xl leading-tight">Ao Khanom</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Ethical pink dolphin watching and community mangrove kayaking projects. Traditional fishing villages and very low tourist numbers.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: dolphin encounters • mangrove kayaking</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1050/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#166534] mb-2">Southern • Mangroves</div>
+                    <h3 class="font-serif text-2xl leading-tight">Ranong Mangrove Forest</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Locally-run boat tours and community homestays in pristine mangrove ecosystems. Strong focus on conservation education.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: mangrove exploration • cultural learning</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/106/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#0f766e] mb-2">Northern • Sanctuary</div>
+                    <h3 class="font-serif text-2xl leading-tight">Chiang Dao Wildlife Sanctuary</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Low-impact cave exploration and ethical trekking with local hill-tribe guides. Rich in birds and butterflies.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: cave trekking • birdwatching</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1080/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#166534] mb-2">Northeastern • National Park</div>
+                    <h3 class="font-serif text-2xl leading-tight">Phu Kradueng National Park</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Epic mountain-plateau trek with strict carry-in/carry-out zero-waste rules. Dramatic scenery and cooler highland climate.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: challenging multi-day hike</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1093/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#0f766e] mb-2">Central • Waterfalls</div>
+                    <h3 class="font-serif text-2xl leading-tight">Erawan National Park</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Conservation-funded 7-tier waterfalls and protected forest trails. Excellent for responsible nature photography.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: waterfall hiking • photography</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1101/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#166534] mb-2">Western • River</div>
+                    <h3 class="font-serif text-2xl leading-tight">Sai Yok National Park</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Responsible River Kwai homestays and bat cave conservation projects. Peaceful river setting with low visitor numbers.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: river homestays • cave exploration</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/112/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#0f766e] mb-2">Eastern • Marine Park</div>
+                    <h3 class="font-serif text-2xl leading-tight">Koh Chang National Marine Park</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Low-density eco-lodges and community reef protection programs. Beautiful beaches with strong conservation focus.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: island relaxation • reef protection</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/114/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#166534] mb-2">Eastern • Islands</div>
+                    <h3 class="font-serif text-2xl leading-tight">Trat Islands (Koh Mak)</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Carbon-neutral community islands with no large resorts. Bicycle-friendly and focused on sustainable tourism.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: car-free island life</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/120/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#0f766e] mb-2">Southern • Mangroves</div>
+                    <h3 class="font-serif text-2xl leading-tight">Krabi Mangrove &amp; Railay</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Ethical rock climbing and community-managed mangrove kayaking. Stunning limestone cliffs with low-impact operators only.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: climbing &amp; kayaking combo</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/129/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#166534] mb-2">Southern • Bay</div>
+                    <h3 class="font-serif text-2xl leading-tight">Phang Nga Bay</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Responsible sea-canoeing and homestays with local fishing communities. Iconic limestone karsts viewed ethically from small boats.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: sea canoeing • community homestays</p>
+                </div>
+            </div>
+
+            <div class="destination-card bg-white rounded-3xl overflow-hidden border border-[#166534]/10">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/133/800/600')"></div>
+                <div class="p-6">
+                    <div class="uppercase text-xs tracking-widest text-[#0f766e] mb-2">Northern • Sanctuary</div>
+                    <h3 class="font-serif text-2xl leading-tight">Lampang Ethical Elephant Sanctuaries</h3>
+                    <p class="text-sm text-[#1e2937]/70 mt-3">Top-tier no-ride, observation-only programs with the highest welfare standards in Thailand. Focus on rescue and natural behaviour.</p>
+                    <p class="text-xs mt-4 text-[#0f766e]">Best for: ethical elephant encounters</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER - newsletter removed -->
+    <footer class="bg-[#166534] text-white/90 py-16">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-y-12">
+                <div>
+                    <div class="flex items-center gap-x-3 mb-6">
+                        <span class="text-4xl">🌿</span>
+                        <h2 class="font-serif text-3xl">EcoExplorer Thailand</h2>
+                    </div>
+                    <p class="text-sm max-w-xs">Travel guides that respect wildlife, nature, and local communities. No greenwashing. Only honest advice.</p>
+                </div>
+                
+                <div>
+                    <h5 class="uppercase text-xs tracking-widest mb-6 font-medium">Navigation</h5>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="destinations.html" class="hover:text-white">Destinations</a></li>
+                        <li><a href="about.html" class="hover:text-white">Our Mission</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="uppercase text-xs tracking-widest mb-6 font-medium">Resources</h5>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-white">Greenwashing Checklist</a></li>
+                        <li><a href="#" class="hover:text-white">Elephant Welfare Guide</a></li>
+                        <li><a href="#" class="hover:text-white">Best Time to Visit Thailand Responsibly</a></li>
+                        <li><a href="legal-notice.html" class="hover:text-white">Legal Notice &amp; Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-xs font-medium">
+                <p>© 2026 EcoExplorerThailand.com • All Rights Reserved</p>
+                <p class="mt-4 md:mt-0">Made for travelers who want Thailand to stay beautiful.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu')
+            const icon = document.getElementById('hamburger')
+            menu.classList.toggle('hidden')
+            
+            if (!menu.classList.contains('hidden')) {
+                icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6h12v12" />`
+            } else {
+                icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />`
+            }
+        }
+    </script>
+</body>
+</html>

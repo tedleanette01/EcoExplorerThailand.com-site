@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ post.excerpt }}">
+    <title>{{ post.title }} | EcoExplorer Thailand</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@700&display=swap');
+        
+        :root { --tw-color-primary: #166534; --tw-color-accent: #0f766e; }
+        
+        * { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+        
+        .tailwind-ready .font-serif { font-family: 'Playfair Display', serif; }
+.prose p {
+    margin-bottom: 1.25em;
+    line-height: 1.75;
+}
+    </style>
+</head>
+<body class="tailwind-ready font-sans antialiased bg-[#f8f9f4] text-[#1e2937]">
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-[#166534] text-white shadow-lg">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <a href="../index.html" class="flex items-center gap-x-3 group">
+                    <span class="text-4xl drop-shadow-md">🌿</span>
+                    <div>
+                        <h1 class="font-serif text-2xl tracking-[-0.5px] leading-none">EcoExplorer</h1>
+                        <p class="text-[10px] font-medium tracking-[1px] text-[#a3e4d6] -mt-0.5">THAILAND</p>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium uppercase tracking-widest">
+                    <a href="../index.html" class="hover:text-[#a3e4d6]">Home</a>
+                    <a href="../destinations.html" class="hover:text-[#a3e4d6]">Destinations</a>
+                    <a href="../about.html" class="hover:text-[#a3e4d6]">Our Mission</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="relative">
+        <div class="h-[480px] lg:h-[560px] relative">
+            <img src="../images/{{ post.image }}" 
+                 alt="{{ post.title }}"
+                 class="absolute inset-0 w-full h-full object-cover brightness-90">
+            <div class="hero-overlay-detail absolute inset-0"></div>
+            
+            <div class="absolute bottom-0 left-0 right-0 max-w-screen-2xl mx-auto px-6 lg:px-12 pb-12 lg:pb-16 text-white">
+                <div class="max-w-3xl">
+                    <div class="flex items-center gap-x-3 mb-6">
+                        <time class="uppercase text-sm tracking-widest bg-white/20 px-5 h-9 flex items-center rounded-3xl">{{ post.date.strftime('%d. %B %Y') }}</time>
+                    </div>
+                    
+                    <h1 class="font-serif text-5xl lg:text-6xl leading-[1.05]">{{ post.title }}</h1>
+                    <p class="mt-8 text-white/90 max-w-lg text-xl">{{ post.excerpt }}</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-screen-2xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <article class="lg:col-span-8 prose prose-lg max-w-none py-12">
+            {{ post.content | safe }}
+        </article>
+        
+        <aside class="lg:col-span-4 pt-12 border-l border-[#166534]/10 pl-12 hidden lg:block">
+            <div class="sticky top-8">
+                <a href="../index.html" class="flex items-center justify-center gap-x-3 text-sm uppercase font-medium border border-[#166534] rounded-3xl py-4 hover:bg-[#166534] hover:text-white">
+                    ← Back to all guides
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#166534] text-white/90 py-16">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-y-12">
+                <div>
+                    <div class="flex items-center gap-x-3 mb-6">
+                        <span class="text-4xl">🌿</span>
+                        <h2 class="font-serif text-3xl">EcoExplorer Thailand</h2>
+                    </div>
+                    <p class="text-sm max-w-xs">Travel guides that respect wildlife, nature, and local communities.</p>
+                </div>
+                
+                <div>
+                    <h5 class="uppercase text-xs tracking-widest mb-6 font-medium">Navigation</h5>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="../index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="../destinations.html" class="hover:text-white">Destinations</a></li>
+                        <li><a href="../about.html" class="hover:text-white">Our Mission</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
